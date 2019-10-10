@@ -6,7 +6,7 @@
   "scripts": {
     "build": "webpack --mode=\"production\"",
     "start": "webpack-dev-server --open --watch",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "author": "Des Butler",
   "license": "MIT",
@@ -27,6 +27,7 @@
     "@babel/runtime": "^7.6.2",
     "@types/jest": "24.0.18",
     "@types/node": "^12.7.8",
+    "@types/node-sass": "^4.11.0",
     "@types/react": "16.9.5",
     "@types/react-dom": "16.9.1",
     "babel-loader": "^8.0.6",

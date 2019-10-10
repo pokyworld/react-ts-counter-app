@@ -33,7 +33,7 @@ module.exports = {
     target: "web",
     mode: "development",
     entry: [
-        "./src/index.tsx",
+        "./index.tsx",
         "./styles/scss/main.scss",
         "./styles/css/app.css"
     ],

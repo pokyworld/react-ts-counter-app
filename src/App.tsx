@@ -1,15 +1,13 @@
-import React, { Fragment } from "react";
+import React, { useContext } from "react";
+import { StoreProvider } from "./Store";
+import Main from "./Main";
 
-const App: React.FC = () => {
+const App: React.FC = (): JSX.Element => {
+
   return (
-    <div className="container">
-      <header className="section">
-        <h1 className="title is-size-2">React-TS boilerplate</h1>
-      </header>
-      <main className="section">
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos rem eligendi nulla porro id minus consequatur illo tenetur vero, error qui! Quisquam, assumenda saepe fugit possimus illo vero voluptate id?</p>
-      </main>
-    </div>
+    <StoreProvider>
+      <Main />
+    </StoreProvider>
   );
 }
 
