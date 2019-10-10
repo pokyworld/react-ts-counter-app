@@ -1,24 +1,14 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Fragment } from "react";
 
 const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className="container">
+      <header className="section">
+        <h1 className="title is-size-2">React-TS boilerplate</h1>
       </header>
+      <main className="section">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos rem eligendi nulla porro id minus consequatur illo tenetur vero, error qui! Quisquam, assumenda saepe fugit possimus illo vero voluptate id?</p>
+      </main>
     </div>
   );
 }
