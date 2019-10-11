@@ -4,6 +4,8 @@ import ReactDOM from "react-dom";
 
 import App from './src/App';
 
-ReactDOM.render(<App />, document.querySelector("#root"));
+const appRoot: HTMLElement = document.querySelector("#root");
+
+ReactDOM.render(<App />, appRoot);
 
 // serviceWorker.unregister();

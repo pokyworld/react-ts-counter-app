@@ -5,18 +5,25 @@ import { incrementCounterAction, decrementCounterAction, resetCounterAction } fr
 
 import CounterOutput from "./components/CounterOutput";
 
-const Main: React.FC = (): JSX.Element => {
+const Hooks: React.FunctionComponent = (props: any): JSX.Element => {
+
     const [state, dispatch] = useContext(Store);
     const { counter } = state;
     const { button } = styles;
 
     return (
         <div className="container">
+
             <header className="section">
                 <h1 className="title is-size-2 has-text-centered">React-TS Counter</h1>
             </header>
+
             <main className="section has-text-centered">
+
+                {/* CounterObject component */}
                 <CounterOutput counter={counter} />
+
+                {/* Button group */}
                 <div className="field">
                     <button
                         onClick={() => incrementCounterAction(state, dispatch)}
@@ -34,7 +41,9 @@ const Main: React.FC = (): JSX.Element => {
                         className="button is-medium is-outlined"
                     >Reset</button>
                 </div>
+
             </main>
+
         </div>
     );
 }
@@ -45,4 +54,4 @@ const styles = {
     }
 }
 
-export default Main;
+export default Hooks;
